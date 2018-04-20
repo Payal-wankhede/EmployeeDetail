@@ -1,5 +1,5 @@
 //
-//  EmployeeDetail.swift
+//  EmployeeModel.swift
 //  EmployeeDetail
 //
 //  Created by Payal Wankhede on 20/04/18.
@@ -8,14 +8,19 @@
 
 import UIKit
 
-class EmployeeDetail: NSObject {
+class EmployeeModel: NSObject {
 
     var employeeName:String = ""
     var employeePhoneNumber:String = ""
+    var isEmployeeFav:Bool = false
     
-    
-    func setEmployeeDetail(dict:NSDictionary) {
+    init(employeeName: String, employeePhoneNumber: String, isEmployeeFav: Bool){
+        self.employeeName = employeeName
+        self.employeePhoneNumber = employeePhoneNumber
+        self.isEmployeeFav = isEmployeeFav
+        
         
     }
+   
     
 }
